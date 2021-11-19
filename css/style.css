@@ -67,7 +67,7 @@ header > .contenedor .texto > p:nth-child(1){
     padding-bottom: 10px;
 }
 
-hr {
+header > .contenedor hr {
     height: 5px;
     width: 260px;
     border: none;
@@ -116,7 +116,7 @@ header > .contenedor > .imagen img{
         width: 100%;
         padding-bottom: 10px;
     }
-    hr{
+    header > .contenedor hr{
         width: 100px;
     }
     .space{
@@ -136,4 +136,103 @@ header > .contenedor > .imagen img{
         align-items: center;
     }
 }
+
+@media all and (min-width:900px) and (max-width:1044px){
+    header > .contenedor hr{
+        width: 100px;
+    }
+}
+
+@media all and (min-width:1427px){
+    header > .contenedor hr{
+        width: 100px;
+    }
+}
+
+@media all and (min-width:1500px){
+    header > .contenedor hr{
+        width: 30%;
+    }
+}
 /* FIN ENCABEZADO */
+
+
+/* NUESTROS SERVICIOS */
+.servicios{
+    padding: 60px;
+    width: 100%;
+}
+
+.servicios > .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* !TEXTO */
+.servicios > .contenedor > .texto{
+    margin-left: 100px;
+    order: 2;
+}
+.servicios > .contenedor > .texto h2{
+    font-size: 45px;
+}
+
+.servicios > .contenedor hr {
+    height: 5px;
+    width: 40%;
+    border: none;
+    background-color: black;
+}
+
+.servicios > .contenedor > .texto P{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* !IMAGEN */
+.servicios > .contenedor > .imagen img{
+    order: 1;
+    width: 500px;
+}
+
+@media all and (max-width:900px){
+    .servicios > .contenedor{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .servicios > .contenedor hr {
+        margin: auto;
+    }
+    /* !TEXTO */
+    .servicios > .contenedor > .texto{
+        margin-left: 0;
+        order: 0;
+    }
+    .servicios > .contenedor > .texto h2{
+        font-size: 45px;
+    }
+    
+    /* .servicios > .contenedor hr {
+        height: 5px;
+        width: 40%;
+        border: none;
+        background-color: black;
+    } */
+    
+    /* .servicios > .contenedor > .texto P{
+        font-size: 20px;
+        margin-top: 5px;
+    } */
+    
+    /* !IMAGEN */
+    .servicios > .contenedor > .imagen img{
+        width: 400px;
+        order: 1;
+    }
+}
+/* FIN NUESTROS SERVICIOS */
