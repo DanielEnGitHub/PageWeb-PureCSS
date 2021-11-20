@@ -47,6 +47,11 @@ header{
 .menu a{
     color: white;
     text-decoration: none;
+    /* transition: 1s; */
+}
+
+.menu a:hover{
+    text-decoration: underline;
 }
 
 /* ! NAV CONTENIDO */
@@ -97,9 +102,23 @@ header > .contenedor .texto > button{
     box-shadow: 0px 3px 6px 1px rgba(102,102,102,0.63);
 }
 
+header > .contenedor .texto > button:hover{
+    transform: scale(1.01,1.01);
+    cursor: pointer;
+    background-color: #FFFAF5;
+    color: #FF8243;
+}
+
 header > .contenedor > .imagen img{
     width: 500px;
+    transition: 0.3s;
 }
+header > .contenedor > .imagen img:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translate(0px, -10px)
+}
+
 
 @media all and (max-width:900px){
     .nav{
@@ -194,6 +213,13 @@ header > .contenedor > .imagen img{
 .servicios > .contenedor > .imagen img{
     order: 1;
     width: 500px;
+    transition: 0.3s;
+}
+
+.servicios > .contenedor > .imagen img:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translate(0px, -10px)
 }
 
 @media all and (max-width:900px){
@@ -241,7 +267,15 @@ header > .contenedor > .imagen img{
 
 .nosotros > .contenedor > .imagen img{
     width: 500px;
+    transition: 0.3s;
 }
+
+.nosotros > .contenedor > .imagen img:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translate(0px, -10px)
+}
+
 @media all and (max-width:900px){
     .nosotros > .contenedor{
         display: flex;
@@ -283,6 +317,12 @@ header > .contenedor > .imagen img{
 
 .proyectos > .imagenes > .imgP img{
     width: 400px;
+    transition: 0.3s;
+}
+.proyectos > .imagenes > .imgP img:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translate(0px, -10px)
 }
 
 .proyectos > .contenedor hr{
@@ -337,6 +377,10 @@ header > .contenedor > .imagen img{
     outline: none;
 }
 
+.contactanos > .contenedor > .botones input:hover{
+    transform: scale(1.01,1.01);
+}
+
 .contactanos > .contenedor > .botones input[type=submit]{
     margin-left: 15px;
     background-color: #FF8243;
@@ -345,10 +389,23 @@ header > .contenedor > .imagen img{
     width: 80px;
 }
 
+
+
+.contactanos > .contenedor > .botones input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #ff8c52;
+}
+
 /* !IMAGEN */
 .contactanos > .imagen img{
     order: 1;
     width: 450px;
+    transition: 0.3s;
+}
+.contactanos > .imagen img:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translate(0px, -10px)
 }
 
 @media all and (max-width:900px){
@@ -395,9 +452,13 @@ footer > .contenedor{
     
 }
 
+.link a:hover{
+    text-decoration: underline;
+    
+}
+
 footer > .contenedor > .texto p{
     margin-top: 10px;
     color: white;
 }
 /* FOOTER */
-
