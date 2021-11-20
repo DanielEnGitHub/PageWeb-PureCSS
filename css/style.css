@@ -260,3 +260,41 @@ header > .contenedor > .imagen img{
     }
 }
 /* FIN NOSOTROS */
+
+/* PROYECTOS */
+.proyectos{
+    padding: 60px;
+    width: 100%;
+}
+.proyectos > .contenedor{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proyectos > .imagenes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.proyectos > .imagenes > .imgP img{
+    width: 400px;
+}
+
+.proyectos > .contenedor hr{
+    width: 50%;
+    margin: auto;
+}
+
+@media all and (max-width:900px){
+    .proyectos > .imagenes > .imgP img{
+        margin-top: 20px;
+        width: 220px;
+    }
+}
+/* FIN PROYECTOS */
