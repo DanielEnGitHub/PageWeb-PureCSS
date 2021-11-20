@@ -358,12 +358,6 @@ header > .contenedor > .imagen img{
         justify-content: center;
         align-items: center;
         text-align: center;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* background-color: #FFFAF5; */
-        /* padding: 60px; */
-        /* width: 100%; */
     }
 
     .contactanos > .contenedor hr {
@@ -380,5 +374,30 @@ header > .contenedor > .imagen img{
     }
     
 }
-
 /* FIN CONTACTANOS */
+footer{
+    background-color: #FDA65D;
+}
+
+footer > .contenedor{
+    padding: 60px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    
+}
+
+footer > .contenedor > .texto p{
+    margin-top: 10px;
+    color: white;
+}
+/* FOOTER */
+
