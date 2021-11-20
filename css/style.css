@@ -99,7 +99,6 @@ header > .contenedor .texto > button{
 
 header > .contenedor > .imagen img{
     width: 500px;
-    /* display: none; */
 }
 
 @media all and (max-width:900px){
@@ -298,3 +297,88 @@ header > .contenedor > .imagen img{
     }
 }
 /* FIN PROYECTOS */
+
+
+/* CONTACTANOS */
+.contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAF5;
+    padding: 60px;
+    width: 100%;
+}
+
+/* !TEXTO */
+.contactanos > .contenedor{
+    order: 2;
+}
+.contactanos > .contenedor hr {
+    height: 5px;
+    width: 70%;
+    border: none;
+    background-color: black;
+}
+
+/* !BUTONES */
+.contactanos > .contenedor > .botones{
+    margin-top: 50px;
+}
+
+/* input[type=text] */
+.contactanos > .contenedor > .botones input{
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 6px 1px rgba(102,102,102,0.63);
+    height: 54px;
+    text-align: center;
+    outline: none;
+}
+
+.contactanos > .contenedor > .botones input[type=submit]{
+    margin-left: 15px;
+    background-color: #FF8243;
+    color: white;
+    font-weight: 900;
+    width: 80px;
+}
+
+/* !IMAGEN */
+.contactanos > .imagen img{
+    order: 1;
+    width: 450px;
+}
+
+@media all and (max-width:900px){
+    .contactanos {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* background-color: #FFFAF5; */
+        /* padding: 60px; */
+        /* width: 100%; */
+    }
+
+    .contactanos > .contenedor hr {
+        margin: auto;
+    }
+
+    .contactanos > .contenedor{
+        order: 0;
+    }
+
+    .contactanos > .imagen img{
+        order: 1;
+        width: 400px;
+    }
+    
+}
+
+/* FIN CONTACTANOS */
