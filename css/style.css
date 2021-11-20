@@ -102,8 +102,6 @@ header > .contenedor > .imagen img{
     /* display: none; */
 }
 
-/* @media all and (min-width:769px) and (max-width:1400px){ */
-
 @media all and (max-width:900px){
     .nav{
         display: flex;
@@ -157,6 +155,25 @@ header > .contenedor > .imagen img{
 /* FIN ENCABEZADO */
 
 
+/* TEXTO CONTENIDO DE SECCIONS */
+.contenedor > .texto h3{
+    font-size: 45px;
+}
+
+.contenedor > .texto P{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.contenedor hr {
+    height: 5px;
+    width: 40%;
+    border: none;
+    background-color: black;
+}
+/* FIN TEXTO CONTENIDO DE SECCIONS */
+
+
 /* NUESTROS SERVICIOS */
 .servicios{
     padding: 60px;
@@ -171,23 +188,7 @@ header > .contenedor > .imagen img{
 
 /* !TEXTO */
 .servicios > .contenedor > .texto{
-    margin-left: 100px;
     order: 2;
-}
-.servicios > .contenedor > .texto h2{
-    font-size: 45px;
-}
-
-.servicios > .contenedor hr {
-    height: 5px;
-    width: 40%;
-    border: none;
-    background-color: black;
-}
-
-.servicios > .contenedor > .texto P{
-    font-size: 20px;
-    margin-top: 5px;
 }
 
 /* !IMAGEN */
@@ -210,24 +211,8 @@ header > .contenedor > .imagen img{
     }
     /* !TEXTO */
     .servicios > .contenedor > .texto{
-        margin-left: 0;
         order: 0;
     }
-    .servicios > .contenedor > .texto h2{
-        font-size: 45px;
-    }
-    
-    /* .servicios > .contenedor hr {
-        height: 5px;
-        width: 40%;
-        border: none;
-        background-color: black;
-    } */
-    
-    /* .servicios > .contenedor > .texto P{
-        font-size: 20px;
-        margin-top: 5px;
-    } */
     
     /* !IMAGEN */
     .servicios > .contenedor > .imagen img{
@@ -236,3 +221,42 @@ header > .contenedor > .imagen img{
     }
 }
 /* FIN NUESTROS SERVICIOS */
+
+
+/* NOSOTROS */
+.nosotros{
+    padding: 60px;
+    width: 100%;
+    background-color: #FFFAF5;
+}
+
+.nosotros > .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros > .contenedor hr {
+    width: 20%;
+}
+
+.nosotros > .contenedor > .imagen img{
+    width: 500px;
+}
+@media all and (max-width:900px){
+    .nosotros > .contenedor{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nosotros > .contenedor hr {
+        width: 20%;
+        margin: auto;
+    }
+    .nosotros > .contenedor > .imagen img{
+        width: 400px;
+    }
+}
+/* FIN NOSOTROS */
