@@ -6,6 +6,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 /* ENCABEZADO */
 header{
     padding: 60px;
@@ -214,19 +217,19 @@ header > .contenedor > .imagen img:hover{
     order: 1;
     width: 500px;
     transition: 0.3s;
+    overflow-x: hidden;
 }
 
 .servicios > .contenedor > .imagen img:hover{
     cursor: pointer;
     transition: 0.3s;
-    transform: translate(0px, -10px)
+    transform: translate(0px, -10px);
 }
 
 @media all and (max-width:900px){
     .servicios > .contenedor{
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         text-align: center;
     }
@@ -279,8 +282,7 @@ header > .contenedor > .imagen img:hover{
 @media all and (max-width:900px){
     .nosotros > .contenedor{
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         text-align: center;
     }
@@ -411,8 +413,7 @@ header > .contenedor > .imagen img:hover{
 @media all and (max-width:900px){
     .contactanos {
         display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         text-align: center;
     }
